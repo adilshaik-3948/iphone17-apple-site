@@ -1,0 +1,198 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Base */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: #000;
+    color: #fff;
+}
+
+.navbar a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.logo {
+    font-size: 22px;
+}
+
+/* HERO (Index page) */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+    background: radial-gradient(circle at top, #0b0b0b, #000);
+    color: #fff;
+}
+
+.hero-img {
+    width: 400px;
+    max-width: 90vw;
+    margin-bottom: 40px;
+    animation: float 4s ease-in-out infinite;
+    filter: drop-shadow(0 50px 60px rgba(212, 175, 7, 0.8));
+}
+
+.hero h2 {
+    font-size: 64px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 21px;
+    color: #a1a1a6;
+    margin-bottom: 40px;
+}
+
+/* Buttons */
+.btn {
+    padding: 14px 36px;
+    background: #0071e3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 28px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 20px;
+}
+
+.feature {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    width: 260px;
+    text-align: center;
+}
+
+/* Sales Page */
+.sales {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.sales h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: #fff;
+    display: inline-block;
+    margin: 20px;
+    padding: 30px;
+    width: 260px;
+    border-radius: 25px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card img {
+    width: 170px;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Buy Button (Sales only) */
+.buy-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 26px;
+    background: #0071e3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+/* Shipping Page */
+.shipping {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.shipping h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.shipping-form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.shipping-form input {
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #d2d2d7;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #6e6e73;
+}
+
+/* Animation */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-img {
+        width: 240px;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
